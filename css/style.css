@@ -1,64 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.menu{
+    margin-left: 48px;
+    font-size: 25px;
+    font-variant-caps: all-small-caps;
+}
+.container {
+    max-width: 1500px;
+    height: 1000px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    margin-top: 200px;
 }
 
-header {
-    background-color: #4CAF50;
-    padding: 10px 0;
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
 }
-
-nav {
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.Vivien{
+    font-variant: all-small-caps;
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(118, 30, 30);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tap{
     text-align: center;
-}
-
-.menu {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu > li {
-    display: inline-block;
-    position: relative;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-}
-
-.menu a:hover {
-    background-color: #45a049;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #4CAF50;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    animation: slideIn 0.3s forwards;
-}
-
-.submenu li {
-    width: 200px;
-}
-
-.submenu a {
-    padding: 10px;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: rgba(41, 70, 13, 0.872);
 }
