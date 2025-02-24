@@ -7,9 +7,12 @@
     margin-left: 48px;
     font-size: 25px;
     font-variant-caps: all-small-caps;
+    color: rgb(0, 0, 0);
+    position: fixed;
 }
+
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.216),rgba(0, 0, 0, 0.216),rgba(0, 0, 0, 0.216)), url(../img/eletmod.svg);
+    background-image: url(../img/fitness-7458603_960_720.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -19,8 +22,9 @@ header{
     max-width: 1500px;
     height: 1000px;
     margin: auto;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-right: 20px;
+    position: absolute;
 }
 .col-2 img {
     max-width: 100%;
@@ -29,11 +33,15 @@ header{
 }
 
 .col-2 h1 {
-    font-size: 50px;
+    font-size: 80px;
     line-height: 60px;
     margin: 25px 0;
 }
 .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-3 {
     flex-basis: 50%;
     min-width: 300px;
 }
@@ -45,25 +53,33 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .tap{
-    text-align: center;
-    color: rgba(41, 70, 13, 0.872);
+    text-align: left;
+    font-size: 43px;
+    color: rgba(54, 87, 28, 0.872);
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.kapcsolat{
+    padding-top: 100px;
+    height: 600px;
+    float: left;
+    padding-right: 40px;
+
 }
-
-
-.left-side {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    font-size: 25px;
+    font-variant: small-caps;
 }
-
-.right-side {
-    flex: 1;
-    background-image: url('../img/eletmod.svg'); 
-    background-size: cover;
-    background-position: center;
+.container2{
+    padding-left: 350px;
+}
+.left{
+    float: left;
+}
+.right{
+    padding-left: 370px;
+}
+h5{
+    font-size: 55px;
 }
