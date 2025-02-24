@@ -1,7 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .menu{
     margin-left: 48px;
     font-size: 25px;
     font-variant-caps: all-small-caps;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.216),rgba(0, 0, 0, 0.216),rgba(0, 0, 0, 0.216)), url(../img/eletmod.svg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
 }
 .container {
     max-width: 1500px;
@@ -35,4 +47,23 @@
 .tap{
     text-align: center;
     color: rgba(41, 70, 13, 0.872);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.left-side {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+}
+
+.right-side {
+    flex: 1;
+    background-image: url('../img/eletmod.svg'); 
+    background-size: cover;
+    background-position: center;
 }
