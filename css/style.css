@@ -239,3 +239,12 @@ h5{
 .kartya p{
     margin: 0;
 }
+
+.kartya-cim{
+    margin-top: 80px;
+}
+
+.szinpenz{
+    color: green;
+    font-weight: bold;
+}
