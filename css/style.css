@@ -117,3 +117,27 @@ h5{
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
     }
+
+
+.kontener{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+}
+
+.kartya{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kartya h2{
+    margin: 0 0 10px;
+}
+
+.kartya p{
+    margin: 0;
+}
