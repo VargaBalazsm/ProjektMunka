@@ -141,3 +141,12 @@ h5{
 .kartya p{
     margin: 0;
 }
+
+.kartya-cim{
+    margin-top: 80px;
+}
+
+p{
+    color: green;
+    font-weight: bold;
+}
