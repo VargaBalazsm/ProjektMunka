@@ -69,7 +69,11 @@ header{
 }
 
 .kepslide{
-    float: left;
-    width: 500px;
-    height: 720px;
+    float: right;
+    width: 720px;
+    height: 520px;
+}
+
+.bloghatter{
+    background: rgba(182, 203, 189, 1);
 }
