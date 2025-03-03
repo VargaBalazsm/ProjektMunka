@@ -68,3 +68,8 @@ header{
     background-position: center;
 }
 
+.kepslide{
+    float: left;
+    width: 500px;
+    height: 720px;
+}
