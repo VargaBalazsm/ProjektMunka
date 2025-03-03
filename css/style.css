@@ -57,11 +57,12 @@ header{
     font-size: 43px;
     color: rgba(54, 87, 28, 0.872);
 }
-.kapcsolat{
+.container-kapcsolat img{
     padding-top: 100px;
     height: 600px;
     float: left;
-    padding-right: 40px;
+    padding-right: 80px;
+    padding-left: 15px;
 
 }
 .main{
@@ -73,6 +74,9 @@ header{
 }
 .container2{
     padding-left: 350px;
+}
+.container2 img{
+    box-shadow: -50px 15px 50px red;
 }
 .left{
     float: left;
@@ -96,3 +100,20 @@ h5{
     height: 520px;
 }
 
+@keyframes appear{
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+    .block {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
