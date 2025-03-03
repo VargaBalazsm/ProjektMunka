@@ -18,7 +18,7 @@ header{
     background-position: center;
     min-height: 100px;
 }
-.container {
+.intro {
     max-width: 1500px;
     height: 1000px;
     margin: auto;
@@ -82,4 +82,20 @@ header{
 }
 h5{
     font-size: 55px;
+}
+.right-side {
+    flex: 1;
+    background-image: url('../img/eletmod.svg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.kepslide{
+    float: right;
+    width: 720px;
+    height: 520px;
+}
+
+.bloghatter{
+    background: rgba(182, 203, 189, 1);
 }
