@@ -1,9 +1,83 @@
-*{
+/* Egesz webeloldalra Modifikaciok */
+
+
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.menu{
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+/* Menu Modifikaciok */
+
+
+
+
+
+
+.menu > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 5px 0;
+}
+
+.submenu a {
+    color: #ddd;
+    padding: 5px 10px;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #444;
+}
+
+.offcanvas {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: beige
+}
+
+
+
+.menu1 {
     margin-left: 48px;
     font-size: 25px;
     font-variant-caps: all-small-caps;
@@ -11,13 +85,38 @@
     position: fixed;
 }
 
-header{
+.felso{
+    margin-bottom: 5px;
+    height: 5px; 
+    background-color: #000000;
+    width: 350px;
+}
+.alsovon{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height: 5px; 
+    background-color: #000000;
+    width: 380px;
+}
+.menupont{
+    text-align: left;
+    padding-left: 50px;
+    font-variant: small-caps;
+    font-size: 23px;
+}
+
+/* Bevezeto Modifikaciok */
+
+
+
+header {
     background-image: url(../img/fitness-7458603_960_720.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     min-height: 100px;
 }
+
 a {
     text-decoration: none;
     color: #555;
@@ -31,6 +130,10 @@ a {
     padding-right: 20px;
     position: absolute;
 }
+
+
+/* Coloumn Modifikaciok */
+
 .col-2 img {
     max-width: 100%;
     padding: 50px 0;
@@ -42,51 +145,61 @@ a {
     line-height: 60px;
     margin: 25px 0;
 }
+
 .col-2 {
     flex-basis: 50%;
     min-width: 300px;
 }
+
 .col-3 {
     flex-basis: 50%;
     min-width: 300px;
 }
-.Vivien{
+
+/* Egyeb Modifikaciok */
+
+.Vivien {
     font-variant: all-small-caps;
     text-align: left;
     margin-bottom: 5px;
     color: rgb(118, 30, 30);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.tap{
+
+.tap {
     text-align: left;
     font-size: 43px;
     color: rgba(54, 87, 28, 0.872);
 }
-.container-kapcsolat img{
-    padding-top: 100px;
-    height: 450px;
-    float: left;
-    padding-right: 80px;
-    padding-left: 15px;
-    z-index: 2;
 
-}
-.main{
+
+/* Foresz Modifikaciok */
+
+.main {
     display: flex;
     justify-content: center;
     background-color: beige;
     font-size: 25px;
     font-variant: small-caps;
-    position: sticky; top: 0;
+    position: sticky;
+    top: 0;
     backdrop-filter: blur(45px);
     z-index: 1;
- 
+
 }
-.also{
+
+/* Also Modifikaciok */
+
+.also {
     background-color: rgb(146, 46, 46);
     height: 250px;
 
 }
+
+
+/* Gomb Modifikaciok */
+
+
 
 .btn {
     display: inline-block;
@@ -97,19 +210,59 @@ a {
     border-radius: 30px;
     width: 750px;
 }
+
 .btn:hover {
-    background-color:  #ff523b;
+    background-color: #ff523b;
 }
 
-.listakapcs{
+
+/* Lista Modifikaciok */
+
+
+.listakapcs {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.listakapcs li{
+
+.listakapcs li {
     text-decoration: none;
 }
-.kapcsolatok{
+
+
+/* Container Modifikaciok */
+
+
+.container-kapcsolat img {
+    padding-top: 100px;
+    height: 450px;
+    float: left;
+    padding-right: 80px;
+    padding-left: 15px;
+    z-index: 2;
+
+}
+
+.container1 {
+    max-width: 3000px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: beige;
+}
+
+.container2 {
+    padding-left: 350px;
+}
+
+.container2 img {
+    box-shadow: -50px 15px 50px red;
+}
+
+
+/* Kapcsolat Modifikaciok */
+
+.kapcsolatok {
 
     justify-content: center;
     background-color: beige;
@@ -118,149 +271,136 @@ a {
     height: 455px;
 }
 
-/* Kapcsolat Modifikaciok */
-
-.kapcsolatt{
-    padding-top: 125px;
-    padding-left: 100px;
-
+.content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1050px;
 }
-.vonal{
-    border: none; 
-    height: 2px; 
-    background-color: #000000; 
-    width: 260px;
-    margin-left: 55px
-    
-}
-.szoveg{
-    font-size: 22px;
-    height: 5px;
-    padding-right: 10px;
-    padding-left: 100px;
-}
-.nev{
-    font-size: 22px;
-    height: 5px;
-    padding-top: 100px;
 
-
+.content h1 {
+    color: #4a4a4a;
 }
-.email{
-    font-size: 22px;
-    height: 5px;
-    padding-left: 155px;
 
+.content p {
+    color: #6a6a6a;
 }
-.subscribe-form input[type="text"],
-.subscribe-form input[type="email"] {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 15px;
-    margin-bottom: 25px; /* Margó a mezők között */
-    height: 45px;
-    font-size: 18px;
+
+.vonal {
+    border: 1px solid #5C3E3E;
+    margin: 10px 0;
     width: 500px;
-    padding-left: 35px;
-    font-variant: small-caps;
 }
 
-.privacy-policy {
-    margin: auto;
-    text-align: right;
-    font-size: 22px;
-    margin-right: 120px;
-    
+.form {
+    flex: 1;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #5b8f5b9a;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.privacy-policy input[type="checkbox"] {
-    margin-right: 10px;
-}
-.gomb{
-    float: right;
-    margin-right: 275px;
-    size: 5px;
-    font-variant: small-caps;
-    margin-top: 25px;
+.form label {
+    color: #4a4a4a;
+    margin-top: 10px;
 }
 
-.subscribe-form button {
-    padding: 5px 15px;
-    font-size: 22px;
-    background-color: #a82b1a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-left: 25px;
+    font-family: sans-serif;
 }
 
-.subscribe-form button:hover {
-    background-color:  #a82b1ac9;
-}
-
-
-
-
-
-
-
-
-
-.container2{
-    padding-left: 350px;
-}
-.container2 img{
-    box-shadow: -50px 15px 50px red;
-}
-.left{
+.checkbox {
+    display: block;
+    align-items: center;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
 }
-.right{
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.feliratkozas {
+    background-color: #7B3E3E;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.feliratkozas:hover {
+    background-color: #5C3E3E;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content,
+    .form {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Bal-Jobb Modifikaciok */
+
+
+.left {
+    float: left;
+}
+
+.right {
     padding-left: 370px;
 }
-h5{
-    font-size: 55px;
-}
+
 .right-side {
     flex: 1;
-    background-image: url('../img/eletmod.svg'); 
+    background-image: url('../img/eletmod.svg');
     background-size: cover;
     background-position: center;
 }
 
-.kepslide{
+
+.kepslide {
     float: right;
     width: 720px;
     height: 520px;
 }
 
-@keyframes appear{
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
 
-    }
+/* H Modifikaciok */
+
+h5 {
+    font-size: 55px;
 }
 
-    .block {
-        animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-    }
 
 
-.kontener{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+/* Szolgaltatasok Modifikaciok */
+
+.kontener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.kartya{
+.kartya {
     background: white;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -269,34 +409,38 @@ h5{
     text-align: center;
 }
 
-.kartya h2{
+.kartya h2 {
     margin: 0 0 10px;
 }
 
-.kartya p{
+.kartya p {
     margin: 0;
 }
 
-.kartya-cim{
+.kartya-cim {
     margin-top: 80px;
 }
 
-.szinpenz{
+.szinpenz {
     color: green;
     font-weight: bold;
 }
 
+/* Footer Modifikaciok */
 
-.footermain{
+
+
+.footermain {
     display: flex;
     justify-content: center;
     background-color: beige;
     font-size: 25px;
     font-variant: small-caps;
-    position: sticky; top: 0;
+    position: sticky;
+    top: 0;
     backdrop-filter: blur(45px);
     z-index: 1;
- 
+
 }
 
 .footer-distributed {
@@ -312,15 +456,18 @@ h5{
     margin-top: 5px;
 
 }
-.kapcsolat1{
+
+.kapcsolat1 {
     text-align: center;
 }
-.footer-vonal{
-    border: none; 
-    height: 2px; 
-    background-color: #000000; 
+
+.footer-vonal {
+    border: none;
+    height: 2px;
+    background-color: #000000;
     width: 1000px;
     margin-left: 425px;
     padding-bottom: 3px;
     margin-bottom: 50px;
 }
+

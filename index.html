@@ -17,34 +17,38 @@
       <button class="navbar-toggler szin" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
-          <p class="menu">Menü</p>
+          <p class="menu1">Menü</p>
         </span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menüpontok</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><hr class="felso"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <div class="offcanvas-body menupont">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 menu">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="">Kezdőlap</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="szolgaltatasok.html">Szolgáltatások</a>
+              <a class="nav-link" href="szolgaltatasok.html">Szolgáltatások ▼</a>
+              <ul class="submenu">
+                <li><a href="#">ALAP TANÁCSADÁS</a></li>
+                <li><a href="#">BABAPROJEKT</a></li>
+                <li><a href="#">BABA A POCAKBAN</a></li>
+                <li><a href="#">PRO CSOMAG</a></li>
+            </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+              <a class="nav-link" href="kapcsolat.html">Kapcsolat </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">Blogunk</a>
             </li>
           </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Keresés</button>
-          </form>
+
         </div>
+        <hr class="alsovon">
       </div>
     </div>
   </nav>
@@ -131,29 +135,29 @@
     </div>
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br>
-  <div class="kapcsolatok">
-    <div class="col-md-8 left">
-      <p class="kapcsolatt">Maradjunk kapcsolatban!</p>
-      <hr class="vonal">
-      <p class="szoveg">Vannak dolgok, amiket nem osztok meg a nyilvános csatornákon.<br> Ha szeretnél elsőként
-        értesülni a legújabb
-        e-bookokról, a legfrissebb receptekről vagy az aktuális ajánlatokról, <br>akkor iratkozz fel hírlevelemre!</p>
+  <div class="container1">
+    <div class="content">
+        <h1>Maradjunk kapcsolatban!</h1>
+        <hr class="vonal">
+        <p>Vannak dolgok, amiket nem osztok meg a nyilvános csatornákon.<br>
+        Ha szeretnél elsőként értesülni a legújabb e-bookokról, a legfrissebb receptekről vagy az aktuális ajánlatokról,<br>
+        akkor iratkozz fel hírlevélre!</p>
+    </div>
+    <form class="form">
+        <label for="name">Neved</label>
+        <input type="text" id="name" placeholder="">
 
-    </div>
-    <div class="feliratkozas">
-      <form class="subscribe-form">
-        <p class="nev">Neved</p>
-        <input type="text" placeholder="" required>
-        <p class="email">E-mail címed</p>
-        <input type="text" placeholder="" required>
-        <div class="privacy-policy">
-          <input type="checkbox" id="privacy" required>
-          <label for="privacy">Elolvastam és elfogadom az <a href="">Adatvédelmi nyilatkozatot</a>.</label>
+        <label for="email">E-mail címed</label>
+        <input type="email" id="email" placeholder="">
+
+        <div class="checkbox">
+            <label for="agreement">Elolvastam és elfogadom az Adatvédelmi nyilatkozatot.</label>
+            <input type="checkbox" id="agreement">
         </div>
-        <button type="submit" class="gomb">Feliratkozom</button>
-      </form>
-    </div>
-  </div>
+
+        <button type="submit" class="feliratkozas">Feliratkozom</button>
+    </form>
+</div>
   <br><br><br><br><br><br><br><br><br>
   <footer class="footer-distributed">
     <div class="footer-left">
