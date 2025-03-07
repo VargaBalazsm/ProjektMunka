@@ -6,55 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Táplálkozási Tanácsadás Kapcsolatunk</title>
+    <title>Táplálkozás tanácsadás | Kezdőlap</title>
 </head>
 
-<body class="bloghatter">
-
+<body>
     <nav class="navbar fixed-top">
         <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="navbar-toggler szin" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
-                    <p class="menu">Menü</p>
+                    <p class="menu1">Menü</p>
                 </span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menüpontok</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <hr class="felso">
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <div class="offcanvas-body menupont">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 menu">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
+                            <a class="nav-link " aria-current="page" href="index.html">Kezdőlap</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="szolgaltatasok.html">Szolgáltatások</a>
+                            <a class="nav-link" href="szolgaltatasok.html">Szolgáltatások ▼</a>
+                            <ul class="submenu">
+                                <li><a href="#">ANYAGCSERETÍPUS MÉRÉS - EASY CSOMAG</a></li>
+                                <li><a href="#">FOGYÓKÚRA PROGRAM NŐKNEK</a></li>
+                                <li><a href="#">FOGYÓKÚRA PROGRAM FÉRFIAKNAK</a></li>
+                                <li><a href="#">ANYAGCSERETÍPUS MÉRÉS - STANDARD CSOMAG</a></li>
+                                <li><a href="#">ANYAGCSERETÍPUS MÉRÉS - PROFESSIONAL CSOMAG</a></li>
+                                <li><a href="#">ÉTELINTOLERANCIA VIZSGÁLAT</a></li>
+                            </ul>
                         </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link active" href="kapcsolat.html">Kapcsolat</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="kapcsolat.html">Kapcsolat </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blogunk</a>
                         </li>
                     </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Keresés</button>
-                    </form>
+
                 </div>
+                <hr class="alsovon">
             </div>
         </div>
     </nav>
+    <br><br><br><br><br>
+    <div class="szolgaltatasok">
+        <h1>Kapcsolat, Elérhetőségek</h1>
+        <br><br>
+        <p class="szoveg1"> Itt tudnak elérni engem az emberek, és örömmel várom a kapcsolatfelvételt! Legyen szó baráti
+            beszélgetésekről,
+            szakmai együttműködésekről vagy egyszerű információcseréről, mindig nyitott vagyok a kommunikációra.<br><br>
+
+            A közösségi média platformjaimon, mint például a Facebook, Instagram és Twitter, könnyen megtalálhatnak.
+            Ezeken a felületeken rendszeresen osztok meg tartalmakat, gondolatokat és élményeket, így betekintést
+            nyerhetnek az életembe és érdeklődési köreimbe.<br><br>
+
+            Ezen kívül e-mailben is elérhetnek, ahol szívesen válaszolok a kérdéseikre vagy bármilyen javaslatra. Ha
+            szeretnének velem beszélgetni, kérlek, ne habozzanak megkeresni! Mindig örömmel fogadom az új kapcsolatokat
+            és a közös gondolkodást.<br><br>
+
+            Bármilyen formában is érkezik a megkeresés, számomra fontos, hogy kapcsolatban maradjunk, és együtt építsük
+            a közösségünket. <br><br>
+        <p class="btn1 ">Várom a jelentkezéseket!</p><br>
+        </p>
+        <br><br><br><br>
+        <div class="services">
+            <div class="service-card ">
+                <img src="img/email.png" alt="ANYAGCSERETÍPUS MÉRÉS - EASY CSOMAG">
+                <h3 class="szoveg">Email <br> <a href="farkasvivien@gmail.com">farkasvivien@gmail.com</a></h3>
+            </div>
+            <div class="service-card">
+                <img src="img/twitter.jfif" alt="FOGYÓKÚRA PROGRAM NŐKNEK">
+                <h3 class="szoveg">Twitter <br> <a href="twitter.com/@farkasvivien">@farkasvivien</a></h3>
+            </div>
+            <div class="service-card">
+                <img src="img/facebook.png" alt="FOGYÓKÚRA PROGRAM FÉRFIAKNAK">
+                <h3 class="szoveg">Facebook <br> <a href="facebook.com/@farkasvivien">@farkasvivien</a></h3>
+
+            </div>
+            <div class="service-card">
+                <img src="img/instagram.jfif" alt="STANDARD CSOMAG">
+                <h3 class="szoveg">Instagram <br> <a href="instagram.com/@farkasvivien">@farkasvivien</a></h3>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer-center">
+        <div class="main">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="szolgaltatasok.html">Szolgáltatások |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Magamról |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="kapcsolat.html">Kapcsolat |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog |</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Felíratkozás </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-
-</html>
