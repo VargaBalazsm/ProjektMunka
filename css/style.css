@@ -179,7 +179,7 @@ a {
     display: flex;
     justify-content: center;
     background-color: beige;
-    font-size: 25px;
+    font-size: 30px;
     font-variant: small-caps;
     position: sticky;
     top: 0;
@@ -211,11 +211,26 @@ a {
     width: 750px;
 }
 
-.btn:hover {
+.btn1:hover {
     background-color: #ff523b;
 }
 
+.btn1 {
+    background: #ff523b;
+    color: #000000;
+    padding: 8px 30px;
+    margin: 30px 0;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 460px;
+    border-radius: 30px;
+    width: 1250px;
+    text-align: center;
+}
 
+.btn:hover {
+    background-color: #ff523b;
+}
 /* Lista Modifikaciok */
 
 
@@ -437,7 +452,7 @@ footer {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 1px;
     flex: 1 1 calc(25% - 20px);
     position: relative;
     overflow: hidden;
@@ -471,6 +486,16 @@ footer {
     }
 }
 
+.szoveg{
+    font-size: 23px;
+
+}
+.szoveg a{
+    color: wheat;
+}
+.szoveg1{
+    font-size: 23px;
+}
 /* Bal-Jobb Modifikaciok */
 
 
