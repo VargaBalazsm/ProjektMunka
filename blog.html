@@ -1,113 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Táplálkozási Tanácsadás Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Táplálkozási Tanácsadás Blog</title>
 </head>
+
 <body class="bloghatter">
-    
-    <nav class="navbar fixed-top">
-        <div class="container-fluid">
-    
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-              <p class="menu">Menü</p>
-            </span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menüpontok</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Szolgáltatások</a>
-                </li>
-                <li class="nav-item"></li>
-                <a class="nav-link" href="#">Kapcsolat</a>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Keresés</button>
-              </form>
-            </div>
+
+  <nav class="navbar fixed-top">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler szin" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <p class="menu1">Menü</p>
+        </span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><hr class="felso"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body menupont">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 menu">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="szolgaltatasok.html">Szolgáltatások ▼</a>
+              <ul class="submenu">
+                <li><a href="#">ANYAGCSERETÍPUS MÉRÉS - EASY CSOMAG</a></li>
+                <li><a href="#">FOGYÓKÚRA PROGRAM NŐKNEK</a></li>
+                <li><a href="#">FOGYÓKÚRA PROGRAM FÉRFIAKNAK</a></li>
+                <li><a href="#">ANYAGCSERETÍPUS MÉRÉS - STANDARD CSOMAG</a></li>
+                <li><a href="#">ANYAGCSERETÍPUS MÉRÉS - PROFESSIONAL CSOMAG</a></li>
+                <li><a href="#">ÉTELINTOLERANCIA VIZSGÁLAT</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kapcsolat.html">Kapcsolat </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blogunk</a>
+            </li>
+          </ul>
+
+        </div>
+        <hr class="alsovon">
+      </div>
+    </div>
+  </nav>
+
+  <div class="container blog">
+
+
+    <div class="row mt-2">
+      <h2>Táplálkozási ötletek és utasítások.</h2>
+    </div>
+
+    <div class="row kepslide">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/saláta 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/saláta 2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/saláta 3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-      </nav>
-      
-      <div class="container blog">
-
-
-        <div class="row mt-2">
-          <h2>Táplálkozási ötletek és utasítások.</h2>
-        </div>
-
-        <div class="row kepslide">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/saláta 1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/saláta 2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/saláta 3.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-        </div>
-
-    
-        
-        <div class="row">
-<div class="p-5">
-<p><h4>1. Kezdd a napot egy tápláló reggelivel!</h4>
-  Sokan mondják, hogy a reggeli a nap legfontosabb étkezése, és ez nem véletlen! A reggeli nem csupán egy étkezés, hanem egy lehetőség arra, hogy feltöltődjetek energiával. A megfelelő reggeli segít beindítani az anyagcserét és fenntartani a vércukorszintet. Választhatsz például zabkását, teljes kiőrlésű pirítóst avokádóval, vagy egy smoothie-t tele friss gyümölcsökkel és magvakkal.NE hagyd ki  a reggelit, még akkor sem, ha rohanós a reggeled. Egy gyors, de tápláló étkezés is segíthet, hogy energikusabb legyél a nap hátralévő részében!</p>
-<p><h4>2. Kiegyensúlyozott étkezés = boldog bélflóra</h4>
-  Mi a titka egy igazán egészséges étkezésnek? Az egyensúly! A bélflóránk megfelelő működése kulcsszerepet játszik az általános egészségünkben, és egy kiegyensúlyozott étkezés segíthet abban, hogy ezt támogassuk. Igyekezz minden étkezésedhez fehérjét, rostot és egészséges zsírokat választani. Például, egy csirkés saláta quinoa-val és avokádóval nemcsak finom, hanem tápláló is!</p>
-<p><h4>3. Ne feledkezz meg a hidratálásról!</h4>
-  A vízfogyasztás talán a legegyszerűbb, mégis legfontosabb lépés a megfelelő táplálkozásban. Ha nem iszunk elég vizet, az kihatással lehet az energiaszintünkre, a bőrünkre, és még az emésztésünkre is. Tartsd magad naponta legalább 2-2,5 liter víz ivásához, és ha unod a sima vizet, próbálj ki egy frissítő citromos vagy menta ízesítésű változatot!Ha nehezen iszol eleget, próbálj meg mindig egy palack vizet magadnál tartani, hogy emlékeztessen a rendszeres ivásra.</p>
-<p><h4>4. Ne hagyd ki az étkezéseket, de ne is pörögj rá túlzottan!</h4>
-  Bár a napi étkezéseid számát személyre szabhatod, fontos, hogy ne hagyj ki étkezéseket, különösen a reggelit vagy az ebédet. Az étkezések kihagyása hosszú távon lassíthatja az anyagcserédet, és végül túlevéshez vezethet. Az étkezések közötti szüneteknek is fontos szerepe van – próbálj meg 3-4 óránként étkezni, hogy fenntartsd az energiaszinted.</p>
-<p><h4>5. Élvezd az étkezést!</h4>
-  Az egészséges táplálkozás nem arról szól, hogy lemondunk a kedvenc ételeinkről, hanem arról, hogy okosan választunk. A finom, tápláló ételek nemcsak a testünket táplálják, hanem a lelkünket is. Engedj meg magadnak időt arra, hogy élvezd az étkezéseket, próbálj ki új recepteket, és fedezd fel, hogyan lehet az egészséges étkezés még izgalmas is!</p>
-</div>
-        </div>
-    
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
+    </div>
 
 
-
-
-
-
-
+ 
+    <div class="row">
+      <div class="p-5">
+        <p>
+        <h4>1. Kezdd a napot egy tápláló reggelivel!</h4>
+        Sokan mondják, hogy a reggeli a nap legfontosabb étkezése, és ez nem véletlen! A reggeli nem csupán egy étkezés,
+        hanem egy lehetőség arra, hogy feltöltődjetek energiával. A megfelelő reggeli segít beindítani az anyagcserét és
+        fenntartani a vércukorszintet. Választhatsz például zabkását, teljes kiőrlésű pirítóst avokádóval, vagy egy
+        smoothie-t tele friss gyümölcsökkel és magvakkal.NE hagyd ki a reggelit, még akkor sem, ha rohanós a reggeled.
+        Egy gyors, de tápláló étkezés is segíthet, hogy energikusabb legyél a nap hátralévő részében!</p>
+        <p>
+        <h4>2. Kiegyensúlyozott étkezés = boldog bélflóra</h4>
+        Mi a titka egy igazán egészséges étkezésnek? Az egyensúly! A bélflóránk megfelelő működése kulcsszerepet játszik
+        az általános egészségünkben, és egy kiegyensúlyozott étkezés segíthet abban, hogy ezt támogassuk. Igyekezz
+        minden étkezésedhez fehérjét, rostot és egészséges zsírokat választani. Például, egy csirkés saláta quinoa-val
+        és avokádóval nemcsak finom, hanem tápláló is!</p>
+        <p>
+        <h4>3. Ne feledkezz meg a hidratálásról!</h4>
+        A vízfogyasztás talán a legegyszerűbb, mégis legfontosabb lépés a megfelelő táplálkozásban. Ha nem iszunk elég
+        vizet, az kihatással lehet az energiaszintünkre, a bőrünkre, és még az emésztésünkre is. Tartsd magad naponta
+        legalább 2-2,5 liter víz ivásához, és ha unod a sima vizet, próbálj ki egy frissítő citromos vagy menta
+        ízesítésű változatot!Ha nehezen iszol eleget, próbálj meg mindig egy palack vizet magadnál tartani, hogy
+        emlékeztessen a rendszeres ivásra.</p>
+        <p>
+        <h4>4. Ne hagyd ki az étkezéseket, de ne is pörögj rá túlzottan!</h4>
+        Bár a napi étkezéseid számát személyre szabhatod, fontos, hogy ne hagyj ki étkezéseket, különösen a reggelit
+        vagy az ebédet. Az étkezések kihagyása hosszú távon lassíthatja az anyagcserédet, és végül túlevéshez vezethet.
+        Az étkezések közötti szüneteknek is fontos szerepe van – próbálj meg 3-4 óránként étkezni, hogy fenntartsd az
+        energiaszinted.</p>
+        <p>
+        <h4>5. Élvezd az étkezést!</h4>
+        Az egészséges táplálkozás nem arról szól, hogy lemondunk a kedvenc ételeinkről, hanem arról, hogy okosan
+        választunk. A finom, tápláló ételek nemcsak a testünket táplálják, hanem a lelkünket is. Engedj meg magadnak
+        időt arra, hogy élvezd az étkezéseket, próbálj ki új recepteket, és fedezd fel, hogyan lehet az egészséges
+        étkezés még izgalmas is!</p>
+      </div>
+    </div>
+  </div>
 </body>
 
 
@@ -115,4 +143,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+
 </html>
