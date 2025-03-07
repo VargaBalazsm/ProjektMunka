@@ -584,3 +584,10 @@ h5 {
     margin-bottom: 50px;
 }
 
+.cardbutton{
+    width: 300px;
+}
+
+.jogacard{
+    float: right;
+}
