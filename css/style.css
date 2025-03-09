@@ -617,9 +617,11 @@ h5 {
     float: right;
     margin-left: 15px;
     text-align: center;
+    background: #b1b1b1;
 }
 
 .tanacsfelirat{
     margin-left: 10px;
     margin-bottom: 15px;
+    
 }
