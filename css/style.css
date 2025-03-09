@@ -615,4 +615,11 @@ h5 {
 
 .jogacard{
     float: right;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.tanacsfelirat{
+    margin-left: 10px;
+    margin-bottom: 15px;
 }
